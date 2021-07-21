@@ -8,13 +8,13 @@ This repo include configuration for:
 - Babel
 - Husky (improves your commits and more woof!)
 
-Installation
+### Installation
 
 ```
 $ yarn install
 ```
 
-Scripts
+### Scripts
 
 ```
 // Development mode
