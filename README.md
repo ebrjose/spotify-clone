@@ -1,8 +1,10 @@
-# Simple ReactJS Boilerplate
+# Custom ReactJS-Webpack Boilerplate
 
 This repo include configuration for:
 
-- ESLint/Airbnb Style Guide
+- ReactJS
+- Webpack 5
+- ESLint/Airbnb (Style Guide)
 - Prettier (code format)
 - Sass
 - Babel
