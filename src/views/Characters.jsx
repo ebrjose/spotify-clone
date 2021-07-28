@@ -1,7 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Characters = () => {
-  return <h1>Page Characters</h1>
+  const [characters, setCharacters] = useState([])
+  useEffect(() => {
+    window
+      .fetch('https://rickandmortyapi.com/api/character')
+      .then((res) => res.json())
+      .then(({ results }) => {
+        setCharacters(results)
+      })
+  }, [])
+
+  return (
+    <div>
+      {characters.map((item) => (
+        <div key={item.id}>
+          <h2>{item.name}</h2>
+          <img src={item.image} alt='' />
+        </div>
+      ))}
+    </div>
+  )
 }
 
 export default Characters
